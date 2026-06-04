@@ -336,12 +336,6 @@
 .home-hero__active-chip--file {
   background: color-mix(in srgb, var(--bg-panel) 92%, var(--accent-tint));
 }
-.home-hero__active-chip--example {
-  max-width: 100%;
-  background: color-mix(in srgb, var(--accent-tint) 48%, var(--bg-panel));
-  border-color: color-mix(in srgb, var(--accent) 22%, var(--border));
-  color: color-mix(in srgb, var(--accent) 80%, var(--text));
-}
 .home-hero__active-file-group {
   display: contents;
 }
@@ -780,6 +774,12 @@
   flex-wrap: nowrap;
   overflow: visible;
 }
+.home-hero__foot-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+}
 .home-hero__execution-switcher {
   display: inline-flex;
   min-width: 0;
@@ -796,10 +796,10 @@
   gap: 4px;
   border-radius: var(--radius-sm);
 }
-.home-hero__foot-left .session-mode-toggle {
+.home-hero__foot-right .session-mode-toggle {
   height: 30px;
 }
-.home-hero__foot-left .session-mode-toggle__trigger {
+.home-hero__foot-right .session-mode-toggle__trigger {
   height: 30px;
   max-width: 120px;
   padding: 0 8px;
@@ -807,7 +807,7 @@
   border-radius: var(--radius-sm);
   font-size: 12px;
 }
-.home-hero__foot-left .session-mode-toggle__label {
+.home-hero__foot-right .session-mode-toggle__label {
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
